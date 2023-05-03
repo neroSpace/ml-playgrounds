@@ -16,4 +16,6 @@ This repository contains a collection of machine learning models and projects th
 
 ## Usage
 To run the code in this repository, you can open the Juptyter Notebook files in your web browser and run the code cells or you can also open it on VS Code if you have Jupyter Notebook extension installed in it. Alternatively, you can run the Python scripts from the command line using the following command:
+
+
 `__*python*__ script_name.py`
