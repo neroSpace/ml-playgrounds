@@ -1,16 +1,3 @@
-# =======================================================================================================
-# PROBLEM C3
-#
-# Build a CNN based classifier for Cats vs Dogs dataset.
-# Your input layer should accept 150x150 with 3 bytes color as the input shape.
-# This is unlabeled data, use ImageDataGenerator to automatically label it.
-# Don't use lambda layers in your model.
-#
-# The dataset used in this problem is originally published in https://www.kaggle.com/c/dogs-vs-cats/data
-#
-# Desired accuracy and validation_accuracy > 72%
-# ========================================================================================================
-
 import tensorflow as tf
 import urllib.request
 import zipfile
@@ -83,4 +70,4 @@ def cat_dog_classifier():
 # It will be saved automatically in your Submission folder.
 if __name__ == '__main__':
     model = cat_dog_classifier()
-    model.save("model_C3.h5")
+    model.save("cat_dog_classifier.h5")
