@@ -10,8 +10,6 @@ def sarcasm_detection():
     data_url = 'https://github.com/dicodingacademy/assets/raw/main/Simulation/machine_learning/sarcasm.json'
     urllib.request.urlretrieve(data_url, 'sarcasm.json')
 
-    # DO NOT CHANGE THIS CODE
-    # Make sure you used all of these parameters or test may fail
     vocab_size = 1000
     embedding_dim = 16
     max_length = 120
@@ -56,7 +54,6 @@ def sarcasm_detection():
     testing_labels = np.array(testing_labels)
 
     model = tf.keras.Sequential([
-        # YOUR CODE HERE. DO not change the last layer or test may fail
         tf.keras.layers.Embedding(vocab_size, embedding_dim, input_length=max_length),
         tf.keras.layers.GlobalAveragePooling1D(),
         tf.keras.layers.Dense(16, activation='relu'),
@@ -78,6 +75,5 @@ def sarcasm_detection():
 # The code below is to save your model as a .h5 file.
 # It will be saved automatically in your Submission folder.
 if __name__ == '__main__':
-    # DO NOT CHANGE THIS CODE
     model = sarcasm_detection()
     model.save("sarcasm_detection.h5")
